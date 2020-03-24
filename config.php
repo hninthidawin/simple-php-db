@@ -8,7 +8,8 @@ $dbpwd = getenv("databasepassword");
 $dbname = getenv("databasename");
 
 /* Attempt to connect to MySQL database */
-$link = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
+$link = mysqli_connect($dbhost, $dbuser, $dbpwd, $dbname);
+// $link = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
 
 // Check connection
 if($link === false){
