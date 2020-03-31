@@ -25,13 +25,22 @@
     </script>
 </head>
 <body>
+    <hgroup>
+    <h1>Welcome to Fujitsu OpenShift Demo</h1>
+    <h2>IP: <?php
+    echo gethostname(); // may output e.g,: sandie
+
+    // Or, an option that also works before PHP 5.3
+    echo php_uname('n'); // may output e.g,: sandie
+    ?> </h2>
+  </hgroup>
     <div class="wrapper">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
                     <div class="page-header clearfix">
-                        <h2 class="pull-left">Employees Details</h2>
-                        <a href="create.php" class="btn btn-success pull-right">Add New Employee</a>
+                        <h2 class="pull-left">Patient Details</h2>
+                        <a href="create.php" class="btn btn-success pull-right">Add New Patient</a>
                     </div>
                     <?php
                     // Include config file
@@ -47,7 +56,7 @@
                                         echo "<th>#</th>";
                                         echo "<th>Name</th>";
                                         echo "<th>Address</th>";
-                                        echo "<th>Salary</th>";
+                                        echo "<th>Bill</th>";
                                         echo "<th>Action</th>";
                                     echo "</tr>";
                                 echo "</thead>";

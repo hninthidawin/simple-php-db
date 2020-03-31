@@ -29,7 +29,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Validate salary
     $input_salary = trim($_POST["salary"]);
     if(empty($input_salary)){
-        $salary_err = "Please enter the salary amount.";     
+        $salary_err = "Please enter the bill amount.";     
     } elseif(!ctype_digit($input_salary)){
         $salary_err = "Please enter a positive integer value.";
     } else{
