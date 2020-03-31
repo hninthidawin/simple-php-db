@@ -26,13 +26,10 @@
 </head>
 <body>
     <hgroup>
-    <h1>Welcome to Fujitsu OpenShift Demo</h1>
-    <h2>IP: <?php
+    <h3>Welcome to Fujitsu OpenShift Demo</h1>
+    <h4>IP: <?php
     echo gethostname(); // may output e.g,: sandie
-
-    // Or, an option that also works before PHP 5.3
-    echo php_uname('n'); // may output e.g,: sandie
-    ?> </h2>
+    ?> </h4>
   </hgroup>
     <div class="wrapper">
         <div class="container-fluid">
