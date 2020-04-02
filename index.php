@@ -54,7 +54,7 @@
                                         echo "<th>#</th>";
                                         echo "<th>Name</th>";
                                         echo "<th>Address</th>";
-                                        echo "<th>Bill</th>";
+                                        echo "<th>Billing Amount</th>";
                                         echo "<th>Action</th>";
                                     echo "</tr>";
                                 echo "</thead>";
