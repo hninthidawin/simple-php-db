@@ -24,10 +24,11 @@
         });
     </script>
 </head>
-<body>
+<body style="background-color:powderblue;">
+    <img src="https://1000logos.net/wp-content/uploads/2017/12/Fujitsu-Logo.png" height="12%" width="10%">
     <hgroup>
     <h3>Welcome to Fujitsu OpenShift Demo</h1>
-    <h4>IP: <?php
+    <h4>Container Name: <?php
     echo gethostname(); // may output e.g,: sandie
     ?> </h4>
   </hgroup>
